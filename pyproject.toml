@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "zntracknodes"
+version = "0.1.0"
+description = "Collection of Nodes build with ZnTrack"
+authors = ["zincwarecode"]
+license = "EPL-2.0"
+
+[tool.poetry.dependencies]
+python = "^3.8, <3.11"
+zntrack = "^0.3.5"
+tensorflow = "^2.8.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.0.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 90
+preview = true
+
+[tool.isort]
+profile = 'black'
+multi_line_output = 3
